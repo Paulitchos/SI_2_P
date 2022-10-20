@@ -1,0 +1,64 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/20/2022 9:35:20 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-GVO1TBA"
+  DTS:CreatorName="DESKTOP-GVO1TBA\paulo"
+  DTS:DTSID="{519F3380-AAE3-4A7E-A7A2-F5E41B919D65}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.845.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{4CE8B253-DF36-4C44-ADB8-535301ECD534}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-GVO1TBA.Biblioteca.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B620B085-6E44-4126-9A8B-3191C6647554}"
+      DTS:ObjectName="DESKTOP-GVO1TBA.Biblioteca.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-GVO1TBA;User ID=sa;Initial Catalog=Biblioteca;Provider=SQLOLEDB.1;Application Name=SSIS-Package-{B620B085-6E44-4126-9A8B-3191C6647554}DESKTOP-GVO1TBA.Biblioteca.sa;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArxtr7OwPK0i37t7aHGGRPAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACxUhpyJ20orJdjee080b9TTU7e/+4IneuZGg88P5IhCwAAAAAOgAAAAAIAACAAAABhTYNmPML2UrGUDfpYUTNoqkZV0kyrlRsKjRgp0zeumyAAAABZEeGr9vH6pMCRdG1ciDotBHlfxJfd0NB9PLMMlffgsUAAAACb4c33p98T1yIlmqNldpLS3zhTN5y8d+HODdJzSaUVNOse8p2QZ5JWMLcRjtccVo2iWoEL0hPlA0s6fWevVxbE</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-GVO1TBA.BibliotecaDW.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{6341E181-418B-40DB-96E3-D90E84E059F3}"
+      DTS:ObjectName="DESKTOP-GVO1TBA.BibliotecaDW.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-GVO1TBA;User ID=sa;Initial Catalog=BibliotecaDW;Provider=SQLOLEDB.1;Application Name=SSIS-Package-{6341E181-418B-40DB-96E3-D90E84E059F3}DESKTOP-GVO1TBA.BibliotecaDW.sa;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArxtr7OwPK0i37t7aHGGRPAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACK5x+5b4zFVN/RT75az9E3x1/dwQrj0MI+oixykuNcnwAAAAAOgAAAAAIAACAAAAD/zM9Pmwsu9nG9oqCFpJ4OSWOLxyAG63Ef/mlZWiNaUiAAAAD+XWcBeWM33Rk9DkkPKmdHCEiK0QgZulkpwS3VoO1Jy0AAAABBjmpqtr0zHLVQteNtLlMj5Jy0zGbQgxS0OaaDJYBzlAg/W8jXaW735yLrSSM/+PANHTIy5RcdUWFK/APtlz3r</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables />
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
