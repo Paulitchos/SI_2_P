@@ -1,0 +1,82 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>DataMining</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>HdLxBHSQZgBFV/2lwOxBZTsVNXo=11/3/2022 11:22:16 PM11/3/2022 10:39:36 PM</TimeStamp>
+        <ID>
+          <String>Biblioteca DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>r08X1Ol9btA3p7T3fNgZ8/iUehQ=11/3/2022 11:14:10 PM11/3/2022 10:41:28 PM</TimeStamp>
+        <ID>
+          <String>Biblioteca DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>oGjTtqrSlJW3jWrtmYP3ZYR0h6Q=11/3/2022 11:14:10 PM11/3/2022 10:55:57 PM</TimeStamp>
+        <ID>
+          <String>DimTempo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>12A/gqZV1Qy3gsUhHZ6PUecu6wQ=11/3/2022 11:20:11 PM11/3/2022 11:10:13 PM</TimeStamp>
+        <ID>
+          <String>Dim Livros</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RVg7EdN7dcX2bHTdBZRf+nW5YGM=11/3/2022 11:18:01 PM11/3/2022 11:10:13 PM</TimeStamp>
+        <ID>
+          <String>Dim Leitores</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Kvp0uKcrb4qe5BwHmNqoKfQXC7U=11/3/2022 11:10:13 PM11/3/2022 11:10:13 PM</TimeStamp>
+        <ID>
+          <String>Dim Tipo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>q1F2Jed/GWB7kgFgB2aoK2GiZRk=11/3/2022 11:20:11 PM11/3/2022 11:10:13 PMCeM/+8wwdI3j1tHdtNAJ0r/AAjg=11/3/2022 11:10:13 PM11/3/2022 11:10:13 PM</TimeStamp>
+        <ID>
+          <String>Biblioteca DW</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>a8c2ejTsoIYq86203vml9ROn5kA=11/3/2022 11:00:55 PM11/3/2022 10:35:51 PM</TimeStamp>
+      <ID>
+        <String>DataMining</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2022-11-03T23:22:19.556667Z</LastDeployed>
+</DeploymentSnapshot>

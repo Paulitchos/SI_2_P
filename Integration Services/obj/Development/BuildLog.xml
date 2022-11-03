@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Integration Services</Name>
-    <LastWriteTime>2022-10-20T21:46:56.4382014Z</LastWriteTime>
+    <LastWriteTime>2022-11-03T22:23:48.7508994Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -13,7 +13,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DimLoad.dtsx</Name>
-      <LastWriteTime>2022-10-20T21:35:31.7981972Z</LastWriteTime>
+      <LastWriteTime>2022-11-03T22:23:48.7229584Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>

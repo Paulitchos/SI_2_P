@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DimLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{0AE59BB4-9396-4917-BEA7-7322162F073C}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{A228E470-D389-4A59-96FC-D68C4E7DCB06}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -40,8 +40,160 @@
           DTS:ConnectionString="Data Source=DESKTOP-GVO1TBA;Initial Catalog=BibliotecaDW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-DimLoad-{6289C466-7466-421F-942B-7DD59F13E6FC}DESKTOP-GVO1TBA.BibliotecaDW.sa;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ReadError]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E794ECAC-03AE-4118-BC66-8FFD1AEB2B66}"
+      DTS:ObjectName="ReadError">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Error\Error_Query.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Titulo"
+              DTS:DTSID="{596D3631-B22A-4661-A162-D294C65C9690}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ID"
+              DTS:DTSID="{59D0F732-5ADD-4800-8086-036C24B1848F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Assunto"
+              DTS:DTSID="{0E7937FB-2BDE-4B79-85BC-C0C0B96F9498}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nome"
+              DTS:DTSID="{3C2D9789-B7F3-4C54-90B5-2565FE80FE4A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{264EBAFD-0082-4594-B601-C4BFE1B0507E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{EFB8BA86-60A7-48AA-951D-20E51D1E602E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[WriteError]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{6C3913F2-2414-43B4-B755-448D95D57EA0}"
+      DTS:ObjectName="WriteError">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Error\Error_Write.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Titulo"
+              DTS:DTSID="{51A9DA55-C988-49C0-BD57-B29095F1F9D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ID"
+              DTS:DTSID="{9833051D-E610-49C8-BF4B-3F7C1B71778B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Assunto"
+              DTS:DTSID="{042789C0-A7A9-4A2C-87AB-A1D31A0E714D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nome"
+              DTS:DTSID="{842F866B-597C-424D-BA54-BBB83C3ABED9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{E9437104-AA25-41D3-9B16-D7425DDEF5F1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{F93FD0A2-DB74-473E-84B1-34D10BD9A61C}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
-  <DTS:Variables />
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{741F6D22-1640-4887-AA02-957DCB2472B4}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="ContadorErros">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\Carregar DimLeitores"
@@ -387,6 +539,210 @@ FROM            Leitores INNER JOIN
           version="1">
           <components>
             <component
+              refId="Package\Carregar DimLivros\Flat File Destination - Input"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination - Input"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Carregar DimLivros\Flat File Destination - Input.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[WriteError]"
+                  connectionManagerRefId="Package.ConnectionManagers[WriteError]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].Columns[Titulo]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Titulo"
+                      externalMetadataColumnId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].ExternalColumns[Titulo]"
+                      lineageId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Output].Columns[Titulo]" />
+                    <inputColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].Columns[ID]"
+                      cachedDataType="i4"
+                      cachedName="ID"
+                      externalMetadataColumnId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].ExternalColumns[ID]"
+                      lineageId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Output].Columns[ID]" />
+                    <inputColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].Columns[Assunto]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Assunto"
+                      externalMetadataColumnId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].ExternalColumns[Assunto]"
+                      lineageId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Output].Columns[Assunto]" />
+                    <inputColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].Columns[Nome]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Nome"
+                      externalMetadataColumnId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].ExternalColumns[Nome]"
+                      lineageId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nome]" />
+                    <inputColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      lineageId="Package\Carregar DimLivros\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\Carregar DimLivros\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].ExternalColumns[ID]"
+                      dataType="i4"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].ExternalColumns[Nome]"
+                      dataType="wstr"
+                      length="50"
+                      name="Nome" />
+                    <externalMetadataColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                    <externalMetadataColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].ExternalColumns[Titulo]"
+                      dataType="wstr"
+                      length="50"
+                      name="Titulo" />
+                    <externalMetadataColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input].ExternalColumns[Assunto]"
+                      dataType="wstr"
+                      length="50"
+                      name="Assunto" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Carregar DimLivros\Flat File Destination - Query"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination - Query"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Carregar DimLivros\Flat File Destination - Query.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ReadError]"
+                  connectionManagerRefId="Package.ConnectionManagers[ReadError]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Carregar DimLivros\Flat File Destination - Query.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Query.Inputs[Flat File Destination Input].Columns[ID]"
+                      cachedDataType="i4"
+                      cachedName="ID"
+                      externalMetadataColumnId="Package\Carregar DimLivros\Flat File Destination - Query.Inputs[Flat File Destination Input].ExternalColumns[ID]"
+                      lineageId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ID]" />
+                    <inputColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Query.Inputs[Flat File Destination Input].Columns[Nome]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Nome"
+                      externalMetadataColumnId="Package\Carregar DimLivros\Flat File Destination - Query.Inputs[Flat File Destination Input].ExternalColumns[Nome]"
+                      lineageId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Nome]" />
+                    <inputColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Query.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\Carregar DimLivros\Flat File Destination - Query.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      lineageId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Query.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\Carregar DimLivros\Flat File Destination - Query.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Query.Inputs[Flat File Destination Input].ExternalColumns[ID]"
+                      dataType="i4"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Query.Inputs[Flat File Destination Input].ExternalColumns[Nome]"
+                      dataType="wstr"
+                      length="50"
+                      name="Nome" />
+                    <externalMetadataColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Query.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Query.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                    <externalMetadataColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Query.Inputs[Flat File Destination Input].ExternalColumns[Titulo]"
+                      dataType="wstr"
+                      length="50"
+                      name="Titulo" />
+                    <externalMetadataColumn
+                      refId="Package\Carregar DimLivros\Flat File Destination - Query.Inputs[Flat File Destination Input].ExternalColumns[Assunto]"
+                      dataType="wstr"
+                      length="50"
+                      name="Assunto" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
               refId="Package\Carregar DimLivros\OLE DB Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -454,7 +810,7 @@ FROM            Leitores INNER JOIN
                 <input
                   refId="Package\Carregar DimLivros\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
-                  errorRowDisposition="FailComponent"
+                  errorRowDisposition="RedirectRow"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
@@ -603,7 +959,7 @@ FROM            Assuntos INNER JOIN
                       refId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Output].Columns[Titulo]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Titulo]"
                       length="50"
                       lineageId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Output].Columns[Titulo]"
@@ -613,7 +969,7 @@ FROM            Assuntos INNER JOIN
                       refId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Output].Columns[ID]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ID]"
                       lineageId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Output].Columns[ID]"
                       name="ID"
@@ -622,7 +978,7 @@ FROM            Assuntos INNER JOIN
                       refId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Output].Columns[Assunto]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Assunto]"
                       length="50"
                       lineageId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Output].Columns[Assunto]"
@@ -632,7 +988,7 @@ FROM            Assuntos INNER JOIN
                       refId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nome]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Nome]"
                       length="50"
                       lineageId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nome]"
@@ -707,13 +1063,91 @@ FROM            Assuntos INNER JOIN
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\Carregar DimLivros\Row Count - Input"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count - Input">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::ContadorErros</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Carregar DimLivros\Row Count - Input.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carregar DimLivros\Row Count - Input.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Carregar DimLivros\Row Count - Input.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carregar DimLivros\Row Count - Query"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count - Query">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::ContadorErros</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Carregar DimLivros\Row Count - Query.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carregar DimLivros\Row Count - Query.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Carregar DimLivros\Row Count - Query.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
           <paths>
+            <path
+              refId="Package\Carregar DimLivros.Paths[OLE DB Destination Error Output]"
+              endId="Package\Carregar DimLivros\Row Count - Input.Inputs[Row Count Input 1]"
+              name="OLE DB Destination Error Output"
+              startId="Package\Carregar DimLivros\OLE DB Destination.Outputs[OLE DB Destination Error Output]" />
+            <path
+              refId="Package\Carregar DimLivros.Paths[OLE DB Source Error Output]"
+              endId="Package\Carregar DimLivros\Row Count - Query.Inputs[Row Count Input 1]"
+              name="OLE DB Source Error Output"
+              startId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Error Output]" />
             <path
               refId="Package\Carregar DimLivros.Paths[OLE DB Source Output]"
               endId="Package\Carregar DimLivros\OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="OLE DB Source Output"
               startId="Package\Carregar DimLivros\OLE DB Source.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Carregar DimLivros.Paths[Row Count Output 1]"
+              endId="Package\Carregar DimLivros\Flat File Destination - Query.Inputs[Flat File Destination Input]"
+              name="Row Count Output 1"
+              startId="Package\Carregar DimLivros\Row Count - Query.Outputs[Row Count Output 1]" />
+            <path
+              refId="Package\Carregar DimLivros.Paths[Row Count Output 11]"
+              endId="Package\Carregar DimLivros\Flat File Destination - Input.Inputs[Flat File Destination Input]"
+              name="Row Count Output 1"
+              startId="Package\Carregar DimLivros\Row Count - Input.Outputs[Row Count Output 1]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -723,7 +1157,7 @@ FROM            Assuntos INNER JOIN
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{C4B47BD6-50D4-480D-81B6-E12D4090B6AA}"
+      DTS:DTSID="{94DC24A2-50B9-408A-8532-CDF086218B8F}"
       DTS:From="Package\Carregar DimLivros"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -742,13 +1176,13 @@ FROM            Assuntos INNER JOIN
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="169,42"
-          Id="Package\Carregar DimLivros"
-          TopLeft="244,72" />
-        <NodeLayout
           Size="179,42"
           Id="Package\Carregar DimLeitores"
           TopLeft="244,159" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\Carregar DimLivros"
+          TopLeft="244,72" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="331,114">
@@ -775,44 +1209,6 @@ FROM            Assuntos INNER JOIN
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Carregar DimLivros">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="150,42"
-          Id="Package\Carregar DimLivros\OLE DB Source"
-          TopLeft="250,130" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Carregar DimLivros\OLE DB Destination"
-          TopLeft="241,212" />
-        <EdgeLayout
-          Id="Package\Carregar DimLivros.Paths[OLE DB Source Output]"
-          TopLeft="325.75,172">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40"
-              Start="0,0"
-              End="0,32.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
     design-time-name="Package\Carregar DimLeitores">
     <LayoutInfo>
       <GraphLayout
@@ -820,25 +1216,37 @@ FROM            Assuntos INNER JOIN
         <NodeLayout
           Size="150,42"
           Id="Package\Carregar DimLeitores\OLE DB Source"
-          TopLeft="265,169" />
+          TopLeft="266,115" />
         <NodeLayout
           Size="171,42"
           Id="Package\Carregar DimLeitores\OLE DB Destination"
-          TopLeft="262,265" />
+          TopLeft="262,334" />
         <EdgeLayout
           Id="Package\Carregar DimLeitores.Paths[OLE DB Source Output]"
-          TopLeft="343.75,211">
+          TopLeft="317.333333333333,157">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,54"
+              EndConnector="30.1666666666667,177"
               Start="0,0"
-              End="0,46.5">
+              End="30.1666666666667,169.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,46.5" />
+                    End="0,67.9208443271768" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,67.9208443271768"
+                    Point2="0,71.9208443271768"
+                    Point3="4,71.9208443271768" />
+                  <mssgle:LineSegment
+                    End="26.1666666666667,71.9208443271768" />
+                  <mssgle:CubicBezierSegment
+                    Point1="26.1666666666667,71.9208443271768"
+                    Point2="30.1666666666667,71.9208443271768"
+                    Point3="30.1666666666667,75.9208443271768" />
+                  <mssgle:LineSegment
+                    End="30.1666666666667,169.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -851,15 +1259,7 @@ FROM            Assuntos INNER JOIN
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Carregar DimLivros\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carregar DimLivros\OLE DB Destination">
+    design-time-name="Package\Carregar DimLeitores\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -879,8 +1279,178 @@ FROM            Assuntos INNER JOIN
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Carregar DimLivros">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Carregar DimLivros\OLE DB Source"
+          TopLeft="250,130" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Carregar DimLivros\OLE DB Destination"
+          TopLeft="232,327" />
+        <EdgeLayout
+          Id="Package\Carregar DimLivros.Paths[OLE DB Source Output]"
+          TopLeft="321.25,172">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,155"
+              Start="0,0"
+              End="0,147.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,147.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="169,42"
+          Id="Package\Carregar DimLivros\Row Count - Query"
+          TopLeft="506,197" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Carregar DimLivros\Row Count - Input"
+          TopLeft="542,416" />
+        <EdgeLayout
+          Id="Package\Carregar DimLivros.Paths[OLE DB Source Error Output]"
+          TopLeft="348.666666666667,172">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="241.833333333333,25"
+              Start="0,0"
+              End="241.833333333333,17.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,6.15831134564644" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,6.15831134564644"
+                    Point2="0,10.1583113456464"
+                    Point3="4,10.1583113456464" />
+                  <mssgle:LineSegment
+                    End="237.833333333333,10.1583113456464" />
+                  <mssgle:CubicBezierSegment
+                    Point1="237.833333333333,10.1583113456464"
+                    Point2="241.833333333333,10.1583113456464"
+                    Point3="241.833333333333,14.1583113456464" />
+                  <mssgle:LineSegment
+                    End="241.833333333333,17.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="57.4827604166667,15.1583113456464,126.8678125,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carregar DimLivros.Paths[OLE DB Destination Error Output]"
+          TopLeft="317.5,369">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="307.5,47"
+              Start="0,0"
+              End="307.5,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.5"
+                    Point2="0,23.5"
+                    Point3="4,23.5" />
+                  <mssgle:LineSegment
+                    End="303.5,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="303.5,23.5"
+                    Point2="307.5,23.5"
+                    Point3="307.5,27.5" />
+                  <mssgle:LineSegment
+                    End="307.5,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="80.54109375,28.5,146.4178125,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="211,42"
+          Id="Package\Carregar DimLivros\Flat File Destination - Query"
+          TopLeft="782,202" />
+        <NodeLayout
+          Size="208,42"
+          Id="Package\Carregar DimLivros\Flat File Destination - Input"
+          TopLeft="775,422" />
+        <EdgeLayout
+          Id="Package\Carregar DimLivros.Paths[Row Count Output 1]"
+          TopLeft="675,220.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="107,0"
+              Start="0,0"
+              End="99.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="99.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carregar DimLivros.Paths[Row Count Output 11]"
+          TopLeft="708,440">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="67,0"
+              Start="0,0"
+              End="59.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="59.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Carregar DimLeitores\OLE DB Destination">
+    design-time-name="Package\Carregar DimLivros\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -889,6 +1459,14 @@ FROM            Assuntos INNER JOIN
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carregar DimLivros\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
