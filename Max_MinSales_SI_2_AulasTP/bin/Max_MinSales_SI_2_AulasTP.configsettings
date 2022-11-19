@@ -2,43 +2,19 @@
   <Database>
     <DataSources>
       <DataSource>
-        <ID>Biblioteca DW</ID>
-        <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-GVO1TBA;Password=;User ID=;Initial Catalog=BibliotecaDW</ConnectionString>
+        <ID>DESKTOP-GVO1TBA</ID>
+        <ConnectionString>Provider=MSOLEDBSQL.1;Data Source=DESKTOP-GVO1TBA;Password=;User ID=;Initial Catalog=MaxMinSales_CustomersONLY</ConnectionString>
         <ImpersonationInfo>
           <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
           <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
         </ImpersonationInfo>
       </DataSource>
     </DataSources>
-    <Dimensions>
-      <Dimension>
-        <ID>Dim Livros</ID>
-      </Dimension>
-      <Dimension>
-        <ID>Dim Leitores</ID>
-      </Dimension>
-      <Dimension>
-        <ID>Dim Tipo</ID>
-      </Dimension>
-      <Dimension>
-        <ID>DimTempo</ID>
-      </Dimension>
-    </Dimensions>
-    <Cubes>
-      <Cube>
-        <ID>Biblioteca DW</ID>
-        <MeasureGroups>
-          <MeasureGroup>
-            <ID>Factos</ID>
-            <Partitions>
-              <Partition>
-                <ID>Factos</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-        </MeasureGroups>
-      </Cube>
-    </Cubes>
+    <MiningStructures>
+      <MiningStructure>
+        <ID>Customer</ID>
+      </MiningStructure>
+    </MiningStructures>
     <DataSourceImpersonationInfo>
       <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
       <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>

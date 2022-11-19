@@ -1,6 +1,6 @@
 ﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
   <Target>
-    <Database>DataMining</Database>
+    <Database>Max_MinSales_SI_2_AulasTP</Database>
     <Server>localhost</Server>
     <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
   </Target>
@@ -8,7 +8,7 @@
     <TransactionalDeployment>false</TransactionalDeployment>
     <PartitionDeployment>DeployPartitions</PartitionDeployment>
     <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
-    <ProcessingOption>Default</ProcessingOption>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
     <OutputScript></OutputScript>
     <ImpactAnalysisFile></ImpactAnalysisFile>
     <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
@@ -19,64 +19,36 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>c8NS1aUIjSgwVUte5vmwgq2VYwE=11/10/2022 10:09:20 PM11/3/2022 10:39:36 PM</TimeStamp>
+        <TimeStamp>CSs4Kxrz3Gz+ZZW64hYVVzHSqk0=11/17/2022 10:52:05 PM11/17/2022 10:51:22 PM</TimeStamp>
         <ID>
-          <String>Biblioteca DW</String>
+          <String>DESKTOP-GVO1TBA</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>9JQQGxEHLWbH4NjHmzdamUlQhgU=11/10/2022 9:56:58 PM11/3/2022 10:41:28 PM</TimeStamp>
+        <TimeStamp>LhzfqIwzgqo+e7ouhsgVcV1CD+M=11/17/2022 10:52:38 PM11/17/2022 10:52:38 PM</TimeStamp>
         <ID>
-          <String>Biblioteca DW</String>
+          <String>Max Min Sales Customers ONLY</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>12A/gqZV1Qy3gsUhHZ6PUecu6wQ=11/3/2022 11:20:11 PM11/3/2022 11:10:13 PM</TimeStamp>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>Q+nzLOofBz+JT9MR7UBXIQKoAeI=11/17/2022 11:14:26 PM11/17/2022 11:10:06 PM</TimeStamp>
         <ID>
-          <String>Dim Livros</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>RVg7EdN7dcX2bHTdBZRf+nW5YGM=11/3/2022 11:18:01 PM11/3/2022 11:10:13 PM</TimeStamp>
-        <ID>
-          <String>Dim Leitores</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>n8YB+ysfxd4IErL+ar7/mk4UUHk=11/10/2022 9:47:07 PM11/3/2022 11:10:13 PM</TimeStamp>
-        <ID>
-          <String>Dim Tipo</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>EhB3og9phCJ5VtMK6rhXH/bqxys=11/10/2022 9:56:58 PM11/10/2022 9:55:16 PM</TimeStamp>
-        <ID>
-          <String>DimTempo</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>pR3f2oUet3U4a94z9rl52cw9EGg=11/10/2022 10:12:46 PM11/10/2022 9:56:58 PMopEqtiM1keAVI9mMHq38VKktmdw=11/10/2022 9:56:58 PM11/10/2022 9:56:58 PM</TimeStamp>
-        <ID>
-          <String>Biblioteca DW</String>
+          <String>Customer</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>emA1LD2IBTUfvllp+5YPLkKTTU4=11/10/2022 9:55:28 PM11/3/2022 10:35:51 PM</TimeStamp>
+      <TimeStamp>klwzTGZ+IbIGODABveX9P/Djqb4=11/17/2022 10:48:34 PM11/17/2022 10:48:32 PM</TimeStamp>
       <ID>
-        <String>DataMining</String>
+        <String>Max_MinSales_SI_2_AulasTP</String>
       </ID>
     </DatabaseSnapshot>
     <Granularity>Coarse</Granularity>
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2022-11-10T22:12:47.063333Z</LastDeployed>
+  <LastDeployed>2022-11-17T23:14:26.736667Z</LastDeployed>
 </DeploymentSnapshot>
