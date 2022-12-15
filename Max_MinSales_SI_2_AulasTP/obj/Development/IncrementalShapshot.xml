@@ -8,7 +8,7 @@
     <TransactionalDeployment>false</TransactionalDeployment>
     <PartitionDeployment>DeployPartitions</PartitionDeployment>
     <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
-    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <ProcessingOption>Default</ProcessingOption>
     <OutputScript></OutputScript>
     <ImpactAnalysisFile></ImpactAnalysisFile>
     <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
@@ -33,7 +33,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>Q+nzLOofBz+JT9MR7UBXIQKoAeI=11/17/2022 11:14:26 PM11/17/2022 11:10:06 PM</TimeStamp>
+        <TimeStamp>Ap+rGIDdE7PshaTJn/vvJ0eIgsk=11/24/2022 11:04:11 PM11/17/2022 11:10:06 PM</TimeStamp>
         <ID>
           <String>Customer</String>
         </ID>
@@ -50,5 +50,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2022-11-17T23:14:26.736667Z</LastDeployed>
+  <LastDeployed>2022-11-24T23:04:16.05Z</LastDeployed>
 </DeploymentSnapshot>

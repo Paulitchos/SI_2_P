@@ -1,4 +1,4 @@
-﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="58f4a763-5c7c-4c76-bdb0-e80907df13ec" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4bafb3bb-6976-4a39-bb47-bd8b924429ce" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Customer</ID>
   <Name>DecisionTree</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -18,7 +18,7 @@
         <dds xmlns="">
           <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-11820" scrolltop="-3916" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="29104" y="15002" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
-              <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
             <mouseicon>
               <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -72,85 +72,85 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="1c12dc85-4422-42f5-aa63-0cedf2eb6bf2">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="20f5e235-026a-4bdb-8e36-41dc2d2f054b">
     <DataSourceViewID>Max Min Sales Customers ONLY</DataSourceViewID>
   </Source>
   <Columns>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="bb7548eb-cc3d-4a62-b1aa-9a8aeedb3963">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1b17de86-c9cf-483e-9bc1-11392e5c425d">
       <ID>Houseowner</ID>
       <Name>Houseowner</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="aecb6d9b-7a86-4df3-9455-38a86852a9cb">
+        <KeyColumn dwd:design-time-name="b574def3-e375-4318-aedf-8a14523dfe3b">
           <DataType>WChar</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c8e0e758-d83b-40d6-874f-ed270bed047e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7f8be4ff-a2ef-4ec3-b08a-ba6046d4ed04">
             <TableID>dbo_Customer</TableID>
             <ColumnID>Houseowner</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="896439e1-d4e2-4715-9a20-43693b3ee0ca">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="21308f03-da09-4f48-a96f-e6efc1938343">
       <ID>Marital Status</ID>
       <Name>Marital Status</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8223f00e-08a9-419f-a310-80170279c4c3">
+        <KeyColumn dwd:design-time-name="6d2a2c70-cb94-4ef1-a90d-d0bd9c1dbef8">
           <DataType>WChar</DataType>
           <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="236aab81-f72a-4722-9592-69c8746653a2">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b34b858e-8d4d-404c-8831-8058f10f86bd">
             <TableID>dbo_Customer</TableID>
             <ColumnID>Marital_Status</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="47f634cf-ab14-4201-ba30-66875abb4936">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="53279c9a-330b-4173-86f6-45a554cd887e">
       <ID>Num Cars Owned</ID>
       <Name>Num Cars Owned</Name>
       <Type>Long</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="12aa0176-b63b-44cf-8faa-de6ffcb499b8">
+        <KeyColumn dwd:design-time-name="b05cb803-8a77-489a-9798-78bae8cb983f">
           <DataType>SmallInt</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bc9c923e-20b1-4226-9805-0c95f9428717">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c91b6dab-3b09-4526-93c4-dde8ac3b1987">
             <TableID>dbo_Customer</TableID>
             <ColumnID>Num_Cars_Owned</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="890a589a-9b28-4c45-a9a0-c2e4232e98bc">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="68d967c0-d2cb-4676-8f45-a0344b0b1809">
       <ID>Num Children At Home</ID>
       <Name>Num Children At Home</Name>
       <Type>Long</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="51f4fb23-69ac-45a9-b5b4-92164ae6b007">
+        <KeyColumn dwd:design-time-name="293ed910-b9e6-493b-a398-c341c4053858">
           <DataType>SmallInt</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c4b13e17-af76-4a7e-82f5-15ffc360846b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="534fef8b-2534-4ad4-bd3d-629b883391e0">
             <TableID>dbo_Customer</TableID>
             <ColumnID>Num_Children_At_Home</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="bf902013-304b-4b8d-909d-87bd0478d357">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2b62c8f4-17cd-47c5-9c6e-42916e1b8bf3">
       <ID>PK Customer Name</ID>
       <Name>PK Customer Name</Name>
       <IsKey>true</IsKey>
       <Type>Long</Type>
       <Content>Key</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d65e761e-2d14-45c2-9ecb-07a864b399ca">
+        <KeyColumn dwd:design-time-name="b5f4cf6f-7bbf-4252-87a3-2e3dd1f8ee8b">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa92a0ef-6ad7-409a-863a-990d4117225f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d239c9d6-b4e0-4bd7-9cff-47f5e2f47ea4">
             <TableID>dbo_Customer</TableID>
             <ColumnID>PK_Customer_Name</ColumnID>
           </Source>
@@ -159,7 +159,7 @@
     </Column>
   </Columns>
   <MiningModels>
-    <MiningModel dwd:design-time-name="84aa4ad3-5437-4c60-ad08-488bec0a63f7">
+    <MiningModel dwd:design-time-name="d2af5c74-f24d-4c5d-9005-5f79c8d4dc34">
       <ID>Customer</ID>
       <Name>Customer</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -168,28 +168,218 @@
       <State>Unprocessed</State>
       <Algorithm>Microsoft_Decision_Trees</Algorithm>
       <Columns>
-        <Column dwd:design-time-name="48cb56c9-3f05-40be-803c-57a39ff435a1">
+        <Column dwd:design-time-name="e0d93384-4447-44bf-9bba-0c8bbb7d8619">
           <ID>Houseowner</ID>
           <Name>Houseowner</Name>
           <SourceColumnID>Houseowner</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="f8912d94-4594-41e7-a345-29abf05973f7">
+        <Column dwd:design-time-name="1fcbbfd8-6ec4-464d-8331-87c88fee0397">
           <ID>Marital Status</ID>
           <Name>Marital Status</Name>
           <SourceColumnID>Marital Status</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="b547cda5-c129-4b04-9dd3-447c5bd7c0a4">
+        <Column dwd:design-time-name="fb364f07-6065-4f6d-a637-0ddecaf0f1df">
           <ID>Num Cars Owned</ID>
           <Name>Num Cars Owned</Name>
           <SourceColumnID>Num Cars Owned</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="7f6be777-16df-41de-9f3e-08f7c72c14b7">
+        <Column dwd:design-time-name="d833649c-c62b-4176-9e6c-cb853670019b">
           <ID>Num Children At Home</ID>
           <Name>Num Children At Home</Name>
           <SourceColumnID>Num Children At Home</SourceColumnID>
           <Usage>PredictOnly</Usage>
         </Column>
-        <Column dwd:design-time-name="4b5e58a9-9c34-41a8-84a0-76f12488a960">
+        <Column dwd:design-time-name="5d057bbe-761b-4d36-9bd6-067674c4b29b">
+          <ID>PK Customer Name</ID>
+          <Name>PK Customer Name</Name>
+          <SourceColumnID>PK Customer Name</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="af8a8bfb-2df5-4553-a0eb-fccb4555eb34">
+      <ID>NaiveBayes</ID>
+      <Name>NaiveBayes</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Naive_Bayes</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="c97b18a9-75ff-46fb-8e9c-4fa905bb4e36">
+          <ID>Houseowner</ID>
+          <Name>Houseowner</Name>
+          <SourceColumnID>Houseowner</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c53d8653-7ead-4783-8831-768f53b21938">
+          <ID>Marital Status</ID>
+          <Name>Marital Status</Name>
+          <SourceColumnID>Marital Status</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="48740bb8-7f9d-4dc1-8a74-a40737135345">
+          <ID>Num Cars Owned</ID>
+          <Name>Num Cars Owned</Name>
+          <SourceColumnID>Num Cars Owned</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="680a092e-e3ae-4b22-82eb-a3f7c43be797">
+          <ID>Num Children At Home</ID>
+          <Name>Num Children At Home</Name>
+          <SourceColumnID>Num Children At Home</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="2286857e-d5ef-457d-840d-c97386433f2e">
+          <ID>PK Customer Name</ID>
+          <Name>PK Customer Name</Name>
+          <SourceColumnID>PK Customer Name</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="05183994-f4ec-44d3-a9fa-77ae5b60888b">
+      <ID>NeuralNetwork</ID>
+      <Name>NeuralNetwork</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Neural_Network</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="d11c9cbd-9e04-4e71-bb25-7075633de157">
+          <ID>Houseowner</ID>
+          <Name>Houseowner</Name>
+          <SourceColumnID>Houseowner</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="75c96895-252f-4c4b-8a45-43d7c3406e62">
+          <ID>Marital Status</ID>
+          <Name>Marital Status</Name>
+          <SourceColumnID>Marital Status</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="3d0dfada-cd9f-4310-a1c6-f3057b5053d3">
+          <ID>Num Cars Owned</ID>
+          <Name>Num Cars Owned</Name>
+          <SourceColumnID>Num Cars Owned</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="06b2486c-cf4b-4f29-93a1-59b4be273e9c">
+          <ID>Num Children At Home</ID>
+          <Name>Num Children At Home</Name>
+          <SourceColumnID>Num Children At Home</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="8f152afb-5297-447b-8fcd-b64c14158990">
+          <ID>PK Customer Name</ID>
+          <Name>PK Customer Name</Name>
+          <SourceColumnID>PK Customer Name</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="95cdabf4-07b3-4109-9fee-ec2ba238a6bc">
+      <ID>Clustering</ID>
+      <Name>Clustering</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Clustering</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="2e871aa0-5c26-4242-8e54-206575ce5f20">
+          <ID>Houseowner</ID>
+          <Name>Houseowner</Name>
+          <SourceColumnID>Houseowner</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="aa24b653-9871-436c-9511-de36a1a8a5d1">
+          <ID>Marital Status</ID>
+          <Name>Marital Status</Name>
+          <SourceColumnID>Marital Status</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="bab79232-4dc5-484c-b818-d73c45ebe660">
+          <ID>Num Cars Owned</ID>
+          <Name>Num Cars Owned</Name>
+          <SourceColumnID>Num Cars Owned</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="cede568b-f0ad-41bf-b99b-832165642ae2">
+          <ID>Num Children At Home</ID>
+          <Name>Num Children At Home</Name>
+          <SourceColumnID>Num Children At Home</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="df44132c-3332-46c7-ab2c-6eaaa1402cce">
+          <ID>PK Customer Name</ID>
+          <Name>PK Customer Name</Name>
+          <SourceColumnID>PK Customer Name</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="da2dcce4-cf85-492b-9b72-1f0d8eadb92a">
+      <ID>AssociationRules</ID>
+      <Name>AssociationRules</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Association_Rules</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="a38664ae-076f-4a47-bb54-61beeee3741f">
+          <ID>Houseowner</ID>
+          <Name>Houseowner</Name>
+          <SourceColumnID>Houseowner</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="8194a041-30fd-4083-bdeb-459d696e858d">
+          <ID>Marital Status</ID>
+          <Name>Marital Status</Name>
+          <SourceColumnID>Marital Status</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9e3ee261-6782-4725-9ed1-14b3f2c9330f">
+          <ID>Num Cars Owned</ID>
+          <Name>Num Cars Owned</Name>
+          <SourceColumnID>Num Cars Owned</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="6a654071-5889-4a82-bf44-472341f828b0">
+          <ID>Num Children At Home</ID>
+          <Name>Num Children At Home</Name>
+          <SourceColumnID>Num Children At Home</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="787762cd-4155-4598-a526-cd8a6c2077a4">
+          <ID>PK Customer Name</ID>
+          <Name>PK Customer Name</Name>
+          <SourceColumnID>PK Customer Name</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="e13d1137-e7f0-4506-be04-7eeb2d82bc17">
+      <ID>LogisticRegression</ID>
+      <Name>LogisticRegression</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Logistic_Regression</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="661ca5d6-7689-4595-8f0d-92253a34de65">
+          <ID>Houseowner</ID>
+          <Name>Houseowner</Name>
+          <SourceColumnID>Houseowner</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b2aba778-2419-4348-8270-b1e0182ff30a">
+          <ID>Marital Status</ID>
+          <Name>Marital Status</Name>
+          <SourceColumnID>Marital Status</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="51df6e65-f833-46c0-9f70-6cdaab7b475b">
+          <ID>Num Cars Owned</ID>
+          <Name>Num Cars Owned</Name>
+          <SourceColumnID>Num Cars Owned</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="eee638e3-3e63-4074-9b97-af430f29ce45">
+          <ID>Num Children At Home</ID>
+          <Name>Num Children At Home</Name>
+          <SourceColumnID>Num Children At Home</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="3f695221-1384-4b8b-a229-8af0fb2b300c">
           <ID>PK Customer Name</ID>
           <Name>PK Customer Name</Name>
           <SourceColumnID>PK Customer Name</SourceColumnID>
